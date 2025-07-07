@@ -1,40 +1,41 @@
-# SQL Study - Day 5: Subqueries
+# SQL 예습 - Day 5: 서브쿼리(Subquery)
 
-## ✅ Summary
+## ✅ 요약
 
-Today’s focus was on mastering **subqueries**, which are essential for handling nested logic and advanced filtering in SQL.  
-We used `users`, `products`, and `orders_v2` tables for all examples.
-
----
-
-## 🔍 Topics Covered
-
-1. SELECT clause with subqueries  
-   → *Not recommended in MySQL due to alias reference issues. Use JOIN instead.*
-
-2. FROM clause with subqueries  
-   → Useful for grouping and aggregating intermediate results.
-
-3. WHERE clause with subqueries  
-   → Ideal for filtering using `IN`, `EXISTS`, and `=` with nested SELECTs.
-
-4. Comparison operators with subqueries  
-   → Practiced `IN`, `EXISTS`, and scalar `=` subqueries.
-
-5. JOIN vs Subquery comparison  
-   → Performance and readability differences were analyzed.
+오늘은 SQL에서 가장 강력한 기능 중 하나인 **서브쿼리(Subquery)**를 집중적으로 학습했다.  
+서브쿼리는 쿼리 내부에 또 다른 SELECT 문을 넣는 방식으로, 복잡한 조건 처리나 요약 결과 활용 등에 자주 사용된다.
 
 ---
 
-## 📁 Files
+## 🔍 주요 학습 내용
 
-- `day5_subquery_practice.sql` – All SQL queries used in today’s practice  
-- `join_vs_subquery.md` – Summary comparing JOIN and subquery strategies  
-- `day5_summary.md` – Full explanation and walkthrough of today’s session
+1. **SELECT 절에서 서브쿼리 사용**  
+   → MySQL에서는 외부 alias 인식 제한으로 실습 불가. JOIN으로 대체하는 것이 일반적.
+
+2. **FROM 절에서 서브쿼리 사용**  
+   → 집계 결과를 중간 테이블로 가공해 활용할 때 유용.
+
+3. **WHERE 절에서 서브쿼리 사용**  
+   → `IN`, `EXISTS`, `=` 등과 함께 조건 필터링에 활용.
+
+4. **서브쿼리와 다양한 비교 연산자 조합**  
+   → `IN`, `EXISTS`, `= (스칼라 서브쿼리)` 실습
+
+5. **JOIN vs 서브쿼리 비교**  
+   → 성능, 가독성, 사용 목적에 따른 선택 기준 정리
 
 ---
 
-## 📌 Notes
+## 📁 관련 파일
 
-> Subqueries can be powerful but should be used wisely.  
-> Always consider readability, performance, and use JOINs when dealing with multi-table data.
+- `day5_subquery_practice.sql` – 오늘 실습한 모든 SQL 쿼리 정리  
+- `join_vs_subquery.md` – JOIN과 서브쿼리 비교 요약  
+- `day5_summary.md` – Day 5 전체 개념 및 예제 해설  
+- `day5_qa.md` – 실습 중 생긴 주요 질문과 해설
+
+---
+
+## 📌 참고 메모
+
+> 서브쿼리는 강력하지만 상황에 따라 JOIN이 더 효율적일 수 있다.  
+> 성능, 가독성, 유지보수성을 고려해 전략적으로 선택해야 한다.
