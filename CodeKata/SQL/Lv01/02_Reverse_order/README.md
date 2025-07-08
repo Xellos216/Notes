@@ -1,4 +1,4 @@
-# 역순 정렬하기 (SELECT)
+# SQL 02 - 역순 정렬하기 (SELECT)
 
 > CodeKata / SQL / Day01 / 역순정렬하기
 
