@@ -9,7 +9,7 @@
 ```
 Study_notes/
 ├── Bootcamp/     # 부트캠프 사전캠프 및 본 과정 정리
-├── Frontend/     # HTML, CSS, JavaScript 등 프론트엔드 관련 학습 내용
+├── JAVA/         # JAVA basic concept, etc
 ├── Git/          # Git 및 GitHub 사용법 정리
 ├── Linux/        # 리눅스 CLI, Bash 스크립트 등 관련 내용
 └── SQL/          # 데이터베이스 및 SQL 관련 실습 및 개념 정리
@@ -43,6 +43,3 @@ Study_notes/
 
 ---
 
-## ✍️ 작성자 메모
-
-> 이 리포는 개인 학습 아카이브용으로 관리되며, 비상업적 참고 목적으로 자유롭게 활용 가능합니다.
