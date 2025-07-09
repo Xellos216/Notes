@@ -4,8 +4,8 @@ SQL 사전캠프 학습 내용 정리 (CLI + GUI)
 
 ## 📁 폴더 구성
 
-- `CLI_mysql/`: CLI 환경에서 직접 쿼리를 실행하며 진행한 SQL 실습 (Day1~Day4)
-- `GUI_mysql/`: DBeaver를 활용한 GUI 기반 SQL 실습 (Week1~)
+- `CLI`: CLI 환경에서 직접 쿼리를 실행하며 진행한 SQL 실습
+- `GUI`: DBeaver를 활용한 GUI 기반 SQL 실습
 
 ## 🧠 목적
 
