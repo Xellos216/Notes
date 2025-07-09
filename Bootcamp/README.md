@@ -14,7 +14,7 @@ Kotlin 언어의 기본 문법을 익히고, Spring 프레임워크를 활용하
 
 ## 💡 학습 계획 (단계별)
 
-### **Phase 1: Kotlin 기초 문법 (3~5일)**
+### Kotlin 기초 문법 **
 
 * **주요 학습 내용:** 변수, 조건문, 반복문, 함수, 클래스/객체, **널 안정성**, 컬렉션, 고차 함수.
 * **중요성:** Spring 개발의 기본 언어이므로, Kotlin 문법에 대한 탄탄한 이해가 필수입니다.
@@ -22,7 +22,7 @@ Kotlin 언어의 기본 문법을 익히고, Spring 프레임워크를 활용하
 
 ---
 
-### **Phase 2: Spring Core & IoC/DI (3~4일)**
+### Spring Core & IoC/DI **
 
 * **주요 학습 내용:** Spring Framework 개요, **IoC/DI 개념**, Bean, `@Component`, `@Autowired`, `@Configuration`, `@Bean`, **Spring Boot 소개**.
 * **중요성:** Spring의 근간이 되는 원리이며, 모든 Spring 애플리케이션 개발에 적용됩니다.
@@ -30,7 +30,7 @@ Kotlin 언어의 기본 문법을 익히고, Spring 프레임워크를 활용하
 
 ---
 
-### **Phase 3: Spring Web (MVC) 및 REST API (4~6일)**
+### Spring Web (MVC) 및 REST API **
 
 * **주요 학습 내용:** Spring Web MVC, **RESTful API**, `@Controller`, `@RestController`, 요청/응답 처리 (`@RequestParam`, `@RequestBody` 등).
 * **중요성:** 웹 서비스 개발의 핵심이며, 백엔드 개발의 주된 결과물입니다.
@@ -38,7 +38,7 @@ Kotlin 언어의 기본 문법을 익히고, Spring 프레임워크를 활용하
 
 ---
 
-### **Phase 4: 데이터베이스 연동 기초 (JPA / Spring Data JPA) (4~5일)**
+### 데이터베이스 연동 기초 (JPA / Spring Data JPA) **
 
 * **주요 학습 내용:** 관계형 DB 개념, JDBC 개요, **JPA & Spring Data JPA**, 엔티티, `JpaRepository`, H2 Database.
 * **중요성:** 대부분의 백엔드 앱이 데이터를 다루며, Spring 생태계에서 가장 효율적인 DB 연동 방식입니다.
