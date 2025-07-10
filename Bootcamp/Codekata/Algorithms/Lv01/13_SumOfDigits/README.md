@@ -28,15 +28,15 @@ def solution(n):
         answer += n % 10  # 가지 마지의 자리 더하기
         n //= 10          # 가지 마지 자리 제거
     return answer
-```
 
-```
 # 문자열 처리
 def solution(n):
     answer = 0
     for digit in str(n):
         answer += int(digit)
     return answer
+```
+
 ---
 
 ## ☕ Java
