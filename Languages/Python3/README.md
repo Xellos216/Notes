@@ -1,6 +1,6 @@
-# 📁 Algorithms - CodeKata 알고리즘 문제집
+# 📁 Algorithms - Python3 
 
-이 디렉토리는 **부트캠프 CodeKata 알고리즘 문제 풀이**를 정리한 공간입니다.  
+이 디렉토리는 **Programers Python3 알고리즘 문제 풀이**를 정리한 공간입니다.  
 문제는 난이도에 따라 `Lv01`부터 `Lv08`까지 구분되어 있으며, 각 폴더에는 해당 레벨의 문제들이 정리되어 있습니다.
 
 ---
@@ -53,6 +53,4 @@ Algorithms/
 └── Lv08/
 ```
 
----
 
-📌 각 문제는 Python3, Java로 정리되어 있으며, C와 Kotlin은 제외되었습니다.
