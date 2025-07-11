@@ -114,3 +114,57 @@ gsettings set org.nemo.desktop network-volumes-visible false
 ## ✅ 9. 기타
 
 - 불필요한 즐겨찾기(Quick Access) 경로는 `~/.config/gtk-3.0/bookmarks` 파일에서 직접 삭제
+
+---
+
+## ✅ 10. `.hidden` 파일을 이용한 사이드바 항목 숨기기
+
+- 특정 폴더를 물리적으로 삭제하지 않고 **탐색기에서만 숨기고 싶을 때** 사용
+- `~/.hidden` 파일에 숨기고 싶은 폴더명을 한 줄씩 입력
+
+예시:
+
+```bash
+nano ~/.hidden
+```
+
+```
+Templates
+Videos
+Pictures
+Music
+Public
+Desktop
+```
+
+- 이후 Nemo를 재시작해야 반영됨:
+
+```bash
+nemo --quit && nemo &
+```
+
+> `.hidden` 파일은 숨김 표시 상태 (`Ctrl + H`)에서도 보이지 않을 수 있음
+
+---
+
+## ✅ 11. 재부팅 후에도 Nemo가 바탕화면을 계속 관리하도록 자동 실행 등록
+
+- 기본 탐색기 설정만으로는 **재부팅 시 바탕화면 아이콘 관리가 해제될 수 있음**
+- 아래 `.desktop` 파일을 만들어 autostart에 등록
+
+```bash
+mkdir -p ~/.config/autostart
+
+cat <<EOF > ~/.config/autostart/nemo-desktop.desktop
+[Desktop Entry]
+Type=Application
+Exec=nemo-desktop
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Nemo Desktop
+Comment=Launch Nemo to manage desktop
+EOF
+```
+
+> 이 설정을 통해 `nemo-desktop`가 로그인 시 자동 실행되어 바탕화면을 계속 관리함
