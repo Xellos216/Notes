@@ -26,3 +26,4 @@ git push origin main --force
 - `tree/main/...` 같은 경로는 Git 원격 주소로 사용할 수 없음
 - 반드시 전체 `.git` 단위 경로 (`.git`이 있는 레포 루트)여야 함
 - 강제 푸시 전에 로컬 상태를 백업해두는 것을 권장
+- commit 전이면 git reset으로 staging 취소 가능
