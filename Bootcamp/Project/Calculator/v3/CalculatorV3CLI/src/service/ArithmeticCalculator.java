@@ -2,6 +2,7 @@ package service;
 
 import java.util.ArrayList;
 import java.util.List;
+import model.ArithmeticOperator;
 
 public class ArithmeticCalculator {
     private final List<Double> results = new ArrayList<>();

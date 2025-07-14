@@ -5,6 +5,7 @@ import model.ArithmeticOperator;
 import java.util.Scanner;
 import java.util.List;
 
+
 public class CalculatorUI {
     private final Scanner scanner = new Scanner(System.in);
 
@@ -26,31 +27,43 @@ public class CalculatorUI {
         }
     }
 
-    public AritheticOperator readOperator(String prompt) {
+    public ArithmeticOperator readOperator(String prompt) {
         System.out.print(prompt);
         String symbol = scanner.next();
         try {
             return ArithmeticOperator.fromSymbol(symbol);
-        } catch (IllegalArgumentException E)
-        System.out.println("Invalid operator:");
+        } catch (IllegalArgumentException E) {
+            System.out.println("Invalid operator:");
+        }
         return null;
+
     }
 
     public void printResult(double result) {
-        System.out.println("= " + result);
+        System.out.println(String.format("= %.5f", result));
     }
 
     public void printHistory(List<Double> results) {
-        System.out.println("Result history: " + result);
+        System.out.println();
+        System.out.println("[ History ] ");
+        System.out.print("[ ");
+        for (int i = 0; i < results.size(); i++) {
+            System.out.print(String.format("%.5f", results.get(i)));
+            if (i < results.size() - 1) System.out.print(", ");
+        }
+        System.out.println(" ]");
+        System.out.println();
     }
 
-    public void printError(service.ArithmeticCalcultor calc) {
-        System.out.println("Max:" + calc.getMaxResult());
-        System.out.println("Min:" + calc.getMinResult());
-        System.out.println("Sum:" + calc.getSumResult());
+    public void printDebug(service.ArithmeticCalculator calc) {
+        System.out.println();
+        System.out.println("[ Stats from previous results ]");
+        System.out.println("Max result: " + String.format("%.5f", calc.getMaxResult()));
+        System.out.println("Min result: " + String.format("%.5f", calc.getMinResult()));
+        System.out.println("Sum of all results: " + String.format("%.5f", calc.getSumResult()));
     }
 
-    public void printDebug(String message) {
+    public void printError(String message) {
         System.out.println("[Error] " + message);
 
     }

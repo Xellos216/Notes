@@ -16,26 +16,36 @@ public class Main {
             Double a = ui.readNumber("Enter first number (or 'exit'):");
             if (a == null) break;
 
-            ArithmeticOperator op = ui.readOperator("Enter operator (+, -, *. /):");
-            if (op == null) continue;
+            ArithmeticOperator op = null;
+            while (op == null) {
+                op = ui.readOperator("Enter operator (+, -, *. /, ^, sqrt):");
+            }
 
-            Double b = ui.readNumber("Enter second number (or 'exit):");
+            if (op.isUnary()) {
+                try {
+                    double result = calculator.calculate(a, 0, op);
+                    ui.printResult(result);
+                    if (DEBUG) ui.printDebug(calculator);
+                } catch (Exception e) {
+                    ui.printError("Calculation error: " + e.getMessage());
+                }
+                ui.printHistory(calculator.getResults());
+                continue;
+            }
+
+            Double b = ui.readNumber("Enter second number (or 'exit'):");
             if (b == null) break;
 
             try {
                 double result = calculator.calculate(a, b, op);
                 ui.printResult(result);
-
-                if (DEBUG) {
-                    ui.printDebug(calculator);
-                }
-            }catch (Exception e) {
+                if (DEBUG) ui.printDebug(calculator);
+            } catch (Exception e) {
                 ui.printError("Calculation error: " + e.getMessage());
             }
 
             ui.printHistory(calculator.getResults());
         }
-
         ui.printExit();
     }
 }
