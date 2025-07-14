@@ -10,7 +10,7 @@ public class Main {
         CalculatorUI ui = new CalculatorUI();
         ArithmeticCalculator calculator = new ArithmeticCalculator();
 
-        ui.printwelcome();
+        ui.printWelcome();
 
         while (true) {
             Double a = ui.readNumber("Enter first number (or 'exit'):");
@@ -20,7 +20,7 @@ public class Main {
             if (op == null) continue;
 
             Double b = ui.readNumber("Enter second number (or 'exit):");
-            if (b == null) breake;
+            if (b == null) break;
 
             try {
                 double result = calculator.calculate(a, b, op);
