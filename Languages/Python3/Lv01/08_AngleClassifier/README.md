@@ -29,36 +29,5 @@ def solution(angle):
     return answer
 ```
 
----
 
-## ☕ Java 풀이
-
-```java
-class Solution {
-    public int solution(int angle) {
-        int answer = 0;
-        if (0 < angle && angle < 90) {
-            answer = 1;
-        } else if (angle == 90) {
-            answer = 2;
-        } else if (90 < angle && angle < 180) {
-            answer = 3;
-        } else if (angle == 180) {
-            answer = 4;
-        }
-        return answer;
-    }
-}
-```
-
----
-
-## ✅ 요약
-
-| 언어     | 특징 요약 |
-|----------|-----------|
-| Python   | `elif` 구조로 간결하게 작성 가능 |
-| Java     | 모든 조건 `else if` 분기문으로 명시 |
-
----
 

@@ -19,30 +19,4 @@ def solution(n):
     return answer
 ```
 
----
-
-## ☕ Java 풀이
-
-```java
-class Solution {
-    public int solution(int n) {
-        int answer = 0;
-        for (int i = 2; i <= n; i += 2) {
-            answer += i;
-        }
-        return answer;
-    }
-}
-```
-
----
-
-## ✅ 요약
-
-| 언어     | 특징 요약 |
-|----------|-----------|
-| Python   | `range(start, end, step)` 문법으로 짝수 순회 |
-| Java     | `i += 2`로 짝수만 순회하여 효율적 |
-
----
 

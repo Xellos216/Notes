@@ -9,31 +9,11 @@
 
 ---
 
-## 🐍 Python 풀이
+## 🐍 Python
 
 ```python
 def solution(num1, num2):
     return num1 - num2
 ```
 
----
-
-## ☕ Java 풀이
-
-```java
-class Solution {
-    public int solution(int num1, int num2) {
-        return num1 - num2;
-    }
-}
-```
-
----
-
-## ✅ 요약
-
-| 언어   | 특징 요약 |
-|--------|-----------|
-| Python | 가장 간결, 테스트 출력도 쉬움 |
-| Java   | 클래스 기반 구조 필수, `Solution` 클래스만 제출 |
 

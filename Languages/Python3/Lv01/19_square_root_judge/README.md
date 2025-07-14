@@ -32,28 +32,4 @@ def solution(n):
         return -1
 ```
 
----
 
-## ☕ Java
-
-```java
-class Solution {
-    public long solution(long n) {
-        double x = Math.sqrt(n);
-        if (x == (long)x) {
-            return (long)Math.pow(x + 1, 2);
-        } else {
-            return -1;
-        }
-    }
-}
-```
-
----
-
-## 📊 요약 비교표
-
-| 언어   | 제곱근 계산     | 정수 판별 방법     | 반환 방식             |
-|--------|----------------|-------------------|-----------------------|
-| Python | `n ** 0.5`     | `x.is_integer()`  | `(x+1)^2` 정수 변환 후 반환 |
-| Java   | `Math.sqrt(n)` | `(double == long)`| `Math.pow` + `(long)` 변환 |

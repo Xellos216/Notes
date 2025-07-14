@@ -26,34 +26,4 @@ def solution(num):
     return answer
 ```
 
----
-
-## ☕ Java
-
-```java
-class Solution {
-    public String solution(int num) {
-        String answer;
-        if (num % 2 == 0) {
-            answer = "Even";
-        } else {
-            answer = "Odd";
-        }
-        return answer;
-    }
-}
-```
-
----
-
-## 📊 요조 비교표
-
-| 언어    | 조건문 구조         | 반환값 선언 방식 | 문자열 리터럴 |
-|---------|---------------------|------------------|----------------|
-| Python  | if / elif           | 변수 직접 대입   | `'Even'`, `'Odd'` |
-| Java    | if / else           | 변수 선언 후 대입 | `"Even"`, `"Odd"` |
-
----
-
-
 

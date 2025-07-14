@@ -19,26 +19,3 @@ def solution(num1, num2):
 
 ---
 
-## ☕ Java 풀이
-
-```java
-class Solution {
-    public int solution(int num1, int num2) {
-        int answer = num1 / num2;
-        return answer;
-    }
-}
-```
-
----
-
-## ✅ 요약
-
-| 언어     | 특징 요약 |
-|----------|-----------|
-| Python   | `//` 연산자를 사용해 정수 몫 반환 |
-| Java     | 기본 int 나눗셈 사용, 클래스 구조 필요 |
-
-
----
-

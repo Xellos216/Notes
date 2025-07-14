@@ -29,33 +29,4 @@ def solution(n):
     return answer
 ```
 
----
-
-## ☕ Java
-
-```java
-class Solution {
-    public int solution(int n) {
-        int sum = 0;
-        for (int i = 1; i <= n; i++) {
-            if (n % i == 0) {
-                sum += i;
-            }
-        }
-        return sum;
-    }
-}
-```
-
----
-
-## 📊 요조 비교표
-
-| 언어    | 방식                | 보호문/메서드 | 특징 |
-|---------|----------------------|------------------|--------|
-| Python  | range(1, n+1)        | for + if         | 단순면 간단 |
-| Java    | for (i=1; i<=n; i++) | if (n % i == 0)  | 구조 같음 |
-
-
----
 

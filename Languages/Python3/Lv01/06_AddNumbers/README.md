@@ -17,27 +17,4 @@ def solution(num1, num2):
     return answer
 ```
 
----
-
-## ☕ Java 풀이
-
-```java
-class Solution {
-    public int solution(int num1, int num2) {
-        int answer = num1 + num2;
-        return answer;
-    }
-}
-```
-
----
-
-## ✅ 요약
-
-| 언어     | 특징 요약 |
-|----------|-----------|
-| Python   | 한 줄로 간단하게 작성 가능 |
-| Java     | 클래스 및 메서드 구조 명확 |
-
----
 

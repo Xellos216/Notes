@@ -22,28 +22,6 @@ def solution(age):
     return answer
 ```
 
----
 
-## ☕ Java 풀이
-
-```java
-class Solution {
-    public int solution(int age) {
-        int answer = 2022 - (age - 1);
-        return answer;
-    }
-}
-```
-
----
-
-## ✅ 요약
-
-| 언어     | 특징 요약 |
-|----------|-----------|
-| Python   | 가장 간단한 구조, 수식 그대로 적용 |
-| Java     | 클래스 구조 필요, 메서드 정의 명확 |
-
----
 
 

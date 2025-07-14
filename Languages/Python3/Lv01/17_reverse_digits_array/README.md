@@ -23,29 +23,3 @@ def solution(n):
     return [int(digit) for digit in str(n)][::-1]
 ```
 
----
-
-## ☕ Java
-
-```java
-class Solution {
-    public int[] solution(long n) {
-        String str = String.valueOf(n);
-        int[] answer = new int[str.length()];
-        for (int i = 0; i < str.length(); i++) {
-            answer[i] = str.charAt(str.length() - 1 - i) - '0';
-        }
-        return answer;
-    }
-}
-```
-
----
-
-## 📊 요조 비교표
-
-| 언어   | 뒤집어 처리 방식 | 타입 및 점검 방식 | 특징 |
-|--------|--------------------------|----------------------|--------|
-| Python | [::-1] 자리 바뀌기   | str(n) + int      | 일반적인 연산 |
-| Java   | 뒤집어 index 계산      | charAt(i) - '0'   | 다양한 유형 포함 |
-

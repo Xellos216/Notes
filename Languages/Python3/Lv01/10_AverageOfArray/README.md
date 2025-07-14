@@ -20,30 +20,4 @@ def solution(numbers):
     return answer / len(numbers)
 ```
 
----
-
-## ☕ Java 풀이
-
-```java
-class Solution {
-    public double solution(int[] numbers) {
-        double answer = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            answer += numbers[i];
-        }
-        return answer / numbers.length;
-    }
-}
-```
-
----
-
-## ✅ 요약
-
-| 언어     | 특징 요약 |
-|----------|-----------|
-| Python   | `sum()` 없이 직접 누적 후 평균 계산 |
-| Java     | `double` 누적 변수 활용 |
-
----
 

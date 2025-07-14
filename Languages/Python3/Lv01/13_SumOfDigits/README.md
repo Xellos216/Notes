@@ -37,34 +37,5 @@ def solution(n):
     return answer
 ```
 
----
 
-## ☕ Java
-
-```java
-import java.util.*;
-
-public class Solution {
-    public int solution(int n) {
-        int sum = 0;
-        while (n > 0) {
-            sum += n % 10;
-            n /= 10;
-        }
-        return sum;
-    }
-}
-```
-
----
-
-## 📊 요조 비교표
-
-| 언어    | 구현 방식         | 기본 방식       | 비고 |
-|---------|----------------------|----------------------|------|
-| Python  | while 메서드     | % 값 및 점체 발차     | 간단면 효과적 |
-| Java    | while 문           | 같은 수학적 기능  | 필요 기술 포함 |
-
-
----
 

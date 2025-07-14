@@ -26,23 +26,3 @@ def solution(s):
     return int(s)
 ```
 
----
-
-## ☕ Java
-
-```java
-class Solution {
-    public int solution(String s) {
-        return Integer.parseInt(s);
-    }
-}
-```
-
----
-
-## 📊 요약 비교표
-
-| 언어   | 형변환 함수           | 비고              |
-|--------|----------------------|-------------------|
-| Python | `int(s)`             | 내장 함수 사용     |
-| Java   | `Integer.parseInt(s)`| 클래스 메서드 사용 |

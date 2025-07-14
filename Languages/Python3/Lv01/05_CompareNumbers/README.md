@@ -21,33 +21,5 @@ def solution(num1, num2):
     return answer
 ```
 
----
-
-## ☕ Java 풀이
-
-```java
-class Solution {
-    public int solution(int num1, int num2) {
-        int answer;
-        if (num1 == num2) {
-            answer = 1;
-        } else {
-            answer = -1;
-        }
-        return answer;
-    }
-}
-```
-
----
-
-## ✅ 요약
-
-| 언어     | 특징 요약 |
-|----------|-----------|
-| Python   | 조건문 구조 간단, `==` 연산자 사용 |
-| Java     | 클래스 구조 필수, `if-else` 명확 작성 |
-
----
 
 

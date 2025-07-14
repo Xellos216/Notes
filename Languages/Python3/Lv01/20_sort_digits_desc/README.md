@@ -20,29 +20,4 @@ def solution(n):
     return int(''.join(sorted(str(n), reverse=True)))
 ```
 
----
 
-## ☕ Java
-
-```java
-import java.util.*;
-
-class Solution {
-    public long solution(long n) {
-        char[] digits = String.valueOf(n).toCharArray();
-        Arrays.sort(digits); // 오름차순 정렬
-        StringBuilder sb = new StringBuilder(new String(digits));
-        sb.reverse(); // 내림차순으로 뒤집기
-        return Long.parseLong(sb.toString());
-    }
-}
-```
-
----
-
-## 📊 요약 비교표
-
-| 언어   | 정렬 방식             | 변환 방식                       | 특징                      |
-|--------|----------------------|--------------------------------|---------------------------|
-| Python | `sorted(..., reverse=True)` | `''.join()` 후 `int()` 변환    | 매우 간결하고 직관적         |
-| Java   | `Arrays.sort()` 후 `reverse()` | `StringBuilder`, `Long.parseLong()` 사용 | 문자열 조작 구조 명확함 |

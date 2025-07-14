@@ -19,27 +19,4 @@ def solution(num1, num2):
     return int(answer)
 ```
 
----
-
-## ☕ Java 풀이
-
-```java
-class Solution {
-    public int solution(int num1, int num2) {
-        double answer = (double)num1 / num2 * 1000;
-        return (int)answer;
-    }
-}
-```
-
----
-
-## ✅ 요약
-
-| 언어     | 특징 요약 |
-|----------|-----------|
-| Python   | `float()` + `int()` 변환으로 쉽게 처리 |
-| Java     | 명시적 캐스팅 `(double)` 후 `(int)`로 반환 |
-
----
 
