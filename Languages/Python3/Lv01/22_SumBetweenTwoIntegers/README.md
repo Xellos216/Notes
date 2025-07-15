@@ -1,18 +1,19 @@
-# 두 정수 사이의 합
+# 22_SumBetweenTwoIntegers
 
-## 🧠 문제 설명
+## 🧠 Problem
 두 정수 `a`, `b`가 주어졌을 때 `a`와 `b` 사이에 속한 모든 정수의 합을 반환하는 함수를 작성하시오.
 
-> 예시  
-> - 입력: `a = 3`, `b = 5` → 출력: `12`  
-> - 입력: `a = 3`, `b = 3` → 출력: `3`  
-> - 입력: `a = 5`, `b = 3` → 출력: `12`
+### Example  
+- Input: `a = 3`, `b = 5` → Output: `12` 
+- Input: `a = 3`, `b = 3` → Output: `3` 
+- Input: `a = 5`, `b = 3` → Output: `12`
 
 ---
 
-## ✅ 풀이 1: 반복문 사용
+## 🐍 Python Reference Code
 
 ```python
+A1
 def solution(a, b):
     start = min(a, b)
     end = max(a, b)
@@ -20,25 +21,20 @@ def solution(a, b):
     for i in range(start, end + 1):
         answer += i
     return answer
-```
 
-### 📌 설명
-- `min(a, b)`: 두 값 중 더 작은 값을 반환합니다.
-- `max(a, b)`: 두 값 중 더 큰 값을 반환합니다.
-- `range(start, end + 1)`: 작은 수부터 큰 수까지 하나씩 더하기 위해 사용합니다.
-
----
-
-## ✅ 풀이 2: 수학 공식 사용
-
-```python
+A2
 def solution(a, b):
     n = abs(a - b) + 1
     total = (a + b) * n // 2
     return total
 ```
 
-### 📌 설명
+#### A1 Explanation
+- `min(a, b)`: 두 값 중 더 작은 값을 반환합니다.
+- `max(a, b)`: 두 값 중 더 큰 값을 반환합니다.
+- `range(start, end + 1)`: 작은 수부터 큰 수까지 하나씩 더하기 위해 사용합니다.
+
+#### A2 Explanation
 - `abs(x)`는 절댓값을 반환하는 함수입니다. 예: `abs(-3) == 3`
 - `a`와 `b` 중 어떤 것이 더 큰지 상관없이 작동합니다.
 - `n = abs(a - b) + 1`은 포함된 정수 개수를 의미합니다.
@@ -46,9 +42,9 @@ def solution(a, b):
 
 ---
 
-## ❓ Q & A
+#### ❓ Q & A
 
-### Q1: `start = min(a, b)` 와 `end = max(a, b)`는 왜 쓰나요?
+#### Q1: `start = min(a, b)` 와 `end = max(a, b)`는 왜 쓰나요?
 - 두 숫자 `a`, `b`는 **크기 순서가 정해지지 않았기 때문**입니다.
 - 예를 들어 `a = 5, b = 3`이라면 `range(a, b)`는 작동하지 않기 때문에,
   - `min(a, b)`로 **더 작은 값을 시작점**
@@ -56,14 +52,9 @@ def solution(a, b):
 
 ---
 
-### Q2: `abs`는 무슨 함수인가요?
+#### Q2: `abs`는 무슨 함수인가요?
 - `abs(x)`는 x의 **절댓값(absolute value)** 을 반환합니다.
-- 예시:
-  ```python
-  abs(5 - 10)   # 결과: 5
-  abs(-3)       # 결과: 3
-  ```
-
-
-
+- 예시: 
+abs(5 - 10)   # 결과: 5
+abs(-3)       # 결과: 3
 

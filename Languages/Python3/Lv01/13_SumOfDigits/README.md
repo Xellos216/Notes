@@ -1,16 +1,16 @@
-# 자리수 더하기 (SumOfDigits)
+# 13_SumOfDigits
 
-## 📈 문제 설명
-자연수 `N`이 주어진면, `N`의 각 자리수의 합을 구해서 return 하는 `solution` 함수를 만들어 주세요.
+## 🧠 Problem
+자연수 `N`이 주어질 때, `N`의 각 자리수의 합을 구해서 return 하는 `solution` 함수를 만들어 주세요.
 
-### 예제
+### Example
 - N = 123 → 1 + 2 + 3 = 6
 - N = 987 → 9 + 8 + 7 = 24
 
-### 제한 사항
+### Constraints
 - N의 범위: 1 경우 ~ 100,000,000 이하의 자연수
 
-### 입력 예시
+### Example
 | N   | answer |
 |-----|--------|
 | 123 | 6      |
@@ -18,7 +18,7 @@
 
 ---
 
-## 🦍 Python
+## 🐍 Python Reference Code
 
 ```python
 # 수학적 방법
