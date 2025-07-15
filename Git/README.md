@@ -11,28 +11,25 @@ Git의 로컬 버전 관리부터 GitHub 원격 저장소 활용, 그리고 Rele
 |--------|------|
 | `Git_CLI.md` | Git의 기본 개념, 커밋/브랜치/병합 전략 등 CLI 중심 실습 정리 |
 | `Github_CLI.md` | GitHub CLI를 통한 레포 생성, PR 흐름, Pages 배포 등 실전 중심 정리 |
-| `Github_Releases/README.md` | GitHub Releases의 개념 및 수동 배포 실습 가이드 |
-| `GitHub_Releases_Lab.md` (예정) | 릴리즈 실습 요약 정리 |
-| `release-checklist.md` (예정) | 배포 전 점검 체크리스트 |
-| `FAQ.md` (예정) | 실습 중 오류 및 해결법 정리 |
+| `Github_Releases` | GitHub Releases의 개념 및 수동 배포 실습 가이드 |
 
 ---
 
-## 🧭 학습 흐름 요약
+## 🧭 학습 요약
 
-### 🟢 1단계: Git 기초 (Git_CLI.md)
+### Git 기초 (Git_CLI.md)
 - Git vs GitHub 차이 이해
 - git add / commit / push 기본 흐름
 - 병합 전략: merge vs rebase 비교
 - git stash / reset / revert 등 실무 커맨드 정리
 
-### 🟡 2단계: GitHub CLI 실습 (Github_CLI.md)
+### GitHub CLI 실습 (Github_CLI.md)
 - `gh` 명령어로 레포 생성, 브랜치, PR 관리
 - 팀 협업 시 pull → edit → commit → push 흐름
 - GitHub Pages 배포 실습
 - 개인 vs 조직 레포 비교 및 협업 구조 이해
 
-### 🔵 3단계: GitHub Releases 실습 (Github_Releases/README.md)
+### GitHub Releases 실습 (Github_Releases/)
 - 태그 및 릴리즈 개념 이해 (v1.0.0 등)
 - 수동 릴리즈 생성 및 `.zip`, `.exe` 업로드 실습
 - 실무에서의 배포 흐름 이해 (변경 기록, 다운로드 제공 등)
