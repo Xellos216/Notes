@@ -1,47 +1,52 @@
-# Git & GitHub CLI 실습 노트
+# 📘 Git & GitHub CLI Study Notes
 
-이 문서는 Git과 GitHub CLI(`gh`)에 대한 실습 기반 학습 내용을 정리한 자료 모음입니다.  
-각 주제는 실제 명령어 사용 예시와 함께 단계별로 정리되어 있으며,  
-협업, 배포, CLI 워크플로우 등 실무에 필요한 내용을 폭넓게 다룹니다.
-
----
-
-## 📦 목적 및 활용
-
-- Git 기본 개념 및 커밋 구조 이해
-- GitHub CLI (`gh`) 설치 및 인증, 레포지토리 생성 실습
-- Pull Request, Fork, 협업 워크플로우 학습
-- GitHub Pages를 통한 정적 사이트 배포 실습
-- 실전 중심으로 오류 해결 및 명령어 흐름 문서화
+이 디렉토리는 Git 및 GitHub CLI 실습과 개념 학습 내용을 체계적으로 정리한 공간입니다.  
+Git의 로컬 버전 관리부터 GitHub 원격 저장소 활용, 그리고 Releases를 통한 실무 배포 흐름까지 단계적으로 학습합니다.
 
 ---
 
-## 📁 디렉토리 구성
+## 📂 디렉토리 구성
 
-각 디렉토리는 실습 주제에 따라 다음과 같이 나뉩니다:
-
-- `01_basics`: Git/GitHub 기초 개념
-- `02_setup_cli`: CLI 환경 설정 & 인증
-- `03_gh_commands`: GitHub CLI 명령어 실습
-- `04_collaboration`: 협업, PR, Fork 등
-- `05_deploy`: GitHub Pages 배포 관련
-- `06_reference`: 기타 참고 자료
-
-각 폴더 안의 `.md` 파일들은 독립적으로 작성되며, 지속적으로 추가됩니다.
+| 파일명 | 설명 |
+|--------|------|
+| `Git_CLI.md` | Git의 기본 개념, 커밋/브랜치/병합 전략 등 CLI 중심 실습 정리 |
+| `Github_CLI.md` | GitHub CLI를 통한 레포 생성, PR 흐름, Pages 배포 등 실전 중심 정리 |
+| `Github_Releases/README.md` | GitHub Releases의 개념 및 수동 배포 실습 가이드 |
+| `GitHub_Releases_Lab.md` (예정) | 릴리즈 실습 요약 정리 |
+| `release-checklist.md` (예정) | 배포 전 점검 체크리스트 |
+| `FAQ.md` (예정) | 실습 중 오류 및 해결법 정리 |
 
 ---
 
-## 🛠 권장 환경
+## 🧭 학습 흐름 요약
 
-- OS: Ubuntu, WSL2, 또는 Parrot 기반 CLI 환경
-- 인증 방식: SSH 키 기반 GitHub 연결
-- GitHub CLI 버전: 최신 Stable (`gh version`으로 확인)
+### 🟢 1단계: Git 기초 (Git_CLI.md)
+- Git vs GitHub 차이 이해
+- git add / commit / push 기본 흐름
+- 병합 전략: merge vs rebase 비교
+- git stash / reset / revert 등 실무 커맨드 정리
+
+### 🟡 2단계: GitHub CLI 실습 (Github_CLI.md)
+- `gh` 명령어로 레포 생성, 브랜치, PR 관리
+- 팀 협업 시 pull → edit → commit → push 흐름
+- GitHub Pages 배포 실습
+- 개인 vs 조직 레포 비교 및 협업 구조 이해
+
+### 🔵 3단계: GitHub Releases 실습 (Github_Releases/README.md)
+- 태그 및 릴리즈 개념 이해 (v1.0.0 등)
+- 수동 릴리즈 생성 및 `.zip`, `.exe` 업로드 실습
+- 실무에서의 배포 흐름 이해 (변경 기록, 다운로드 제공 등)
+- 추후 GitHub Actions 기반 자동 릴리즈까지 확장 가능
 
 ---
 
-## 🧭 목표
+## 🧠 이 디렉토리의 활용 목적
 
-"GitHub에서 CLI만으로 실전 워크플로우를 다룰 수 있다"는 **자신감 있는 상태**가 최종 목표입니다.  
-문서 하나하나를 따라가다 보면, 나중에 스스로 문제 해결이 가능할 만큼 실력이 쌓입니다.
+- Git과 GitHub의 구조 및 차이를 명확히 구분하고 실습
+- 수동 → 자동화 → 협업 단계까지 점진적 학습
+- Markdown 기반 CLI 중심 학습자료 축적
 
 ---
+
+> 이 문서와 하위 문서는 CLI 기반 Git 사용을 처음 접하거나,  
+> 실무에 GitHub를 효율적으로 연동하고 싶은 사람에게 적합합니다.
