@@ -24,9 +24,11 @@ def solution(arr, divisor):
 ## Explanation
 
 ###리스트 컴프리헨션
+
 [x for x in arr if x % divisor == 0]
 
 위 코드는 아래의 반복문과 완전히 같은 의미입니다:
+
 result = []
 for x in arr:
     if x % divisor == 0:
