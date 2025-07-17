@@ -297,3 +297,138 @@ rm filename.txt
 ---
 
 > 💡 Always think twice before using `rm -rf`, especially as `root`.
+
+---
+
+# 📁 파일 정보 확인을 위한 유용한 Bash 명령어
+
+이 문서는 파일의 크기, 타임스탬프, 권한 등을 확인할 때 유용한 Bash 명령어를 요약한 것입니다.
+
+---
+
+## 📁 1. 파일 크기 및 메타데이터 보기
+
+```bash
+ls -lh filename
+```
+
+- `-l`: 긴 형식으로 출력 (권한, 소유자, 크기, 수정 시간 등)
+- `-h`: 사람이 읽기 쉬운 단위(KB, MB, GB 등)로 표시
+
+예시:
+```bash
+ls -lh video.mp4
+# 출력 예: -rw-r--r-- 1 user user 18M Jul 17 19:48 video.mp4
+```
+
+---
+
+## 📏 2. 바이트 단위의 정확한 파일 크기 확인
+
+```bash
+stat -c %s filename
+```
+
+- 파일 크기를 **바이트 단위로 정확히** 반환함
+- 스크립트나 정밀 비교 시 유용
+
+예시:
+```bash
+stat -c %s video.mp4
+# 출력 예: 18350080
+```
+
+---
+
+## 📊 3. 디스크 사용량 확인 (파일 시스템 블록 단위)
+
+```bash
+du -h filename
+```
+
+- 해당 파일이 디스크에서 실제로 차지하는 용량을 표시
+- 파일 시스템의 블록 단위 오버헤드 포함됨
+
+예시:
+```bash
+du -h video.mp4
+# 출력 예: 20M    video.mp4
+```
+
+---
+
+## ⏱️ 4. 파일의 모든 타임스탬프 보기
+
+```bash
+stat filename
+```
+
+- 수정 시간(`Modify`), 접근 시간(`Access`), 변경 시간(`Change`)을 모두 보여줌
+- 추가로 권한, inode 번호, 파일 크기도 표시됨
+
+예시:
+```bash
+stat video.mp4
+```
+
+---
+
+## 🔐 5. 파일 권한만 확인하기
+
+```bash
+ls -l filename
+```
+
+- 파일의 권한, 소유자, 그룹 정보를 보여줌
+
+예시:
+```
+-rw-r--r-- 1 user user ...
+```
+
+---
+
+## 📂 6. 디렉토리 내 파일 개수 세기
+
+```bash
+ls -1 | wc -l
+```
+
+- `ls -1`: 파일을 한 줄에 하나씩 출력
+- `wc -l`: 줄 수를 세어 파일 개수를 파악
+
+---
+
+## 🧪 7. MIME 타입 확인 (파일 형식 판별)
+
+```bash
+file --mime-type filename
+```
+
+- 확장자와 관계없이 파일의 실제 콘텐츠 형식(MIME Type)을 감지
+
+예시:
+```bash
+file --mime-type video.mp4
+# 출력 예: video/mp4
+```
+
+---
+
+## 🧰 보너스: 전체 정보를 출력하는 스크립트 예제
+
+```bash
+#!/bin/bash
+f="$1"
+echo "이름: $f"
+ls -lh "$f"
+echo "정확한 크기 (bytes): $(stat -c %s "$f")"
+echo "디스크 사용량: $(du -h "$f" | cut -f1)"
+echo "MIME 타입: $(file --mime-type -b "$f")"
+```
+
+스크립트 이름을 `file_info.sh`로 저장한 뒤 아래처럼 실행:
+
+```bash
+./file_info.sh yourfile.mp4
+```
