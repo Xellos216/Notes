@@ -1,20 +1,17 @@
-# 14_SumOfDivisors
-
 ## 🧠 Problem
-정수 `n`을 입력받아 `n`의 약수를 모두 더하는 값을 return하는 함수 `solution`을 구해보세요.
+정수 `n`이 주어질 때, `n`의 모든 약수를 더한 값을 반환하는 함수를 작성하시오.
 
 ### Constraints
-- `n` 은 0 이상 30,000이하의 정수입니다.
+- `n`은 0보다 크고 30,000 이하인 정수
 
 ### Example
-| n  | return |
-|----|--------|
-| 12 | 28     |
-| 5  | 6      |
+- Input: `n = 12`
+- Output: `28`  
+  (1 + 2 + 3 + 4 + 6 + 12)
 
-### Explanation
-- 12의 약수: 1, 2, 3, 4, 6, 12 → 모두 더하면 28
-- 5의 약수: 1, 5 → 모두 더하면 6
+- Input: `n = 5`
+- Output: `6`  
+  (1 + 5)
 
 ---
 
@@ -28,5 +25,3 @@ def solution(n):
             answer += i
     return answer
 ```
-
-

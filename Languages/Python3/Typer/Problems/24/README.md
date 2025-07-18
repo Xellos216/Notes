@@ -1,8 +1,10 @@
-# 24_Find_Kim
-
 ## 🧠 Problem
-문자열 배열 `seoul`이 주어졌을 때, `"Kim"`이라는 이름이 **몇 번째(index)** 위치에 있는지 찾아서
-`"김서방은 x에 있다"`라는 형식의 문자열로 반환하는 함수를 작성하시오.
+String형 배열 `seoul`의 element 중 `"Kim"`의 위치 `x`를 찾아, `"김서방은 x에 있다"`는 String을 반환하는 함수를 작성하세요.
+
+### Constraints
+- `seoul`은 길이 1 이상, 1000 이하인 배열입니다.
+- `seoul`의 원소는 길이 1 이상, 20 이하인 문자열입니다.
+- `"Kim"`은 반드시 `seoul` 안에 포함되어 있습니다.
 
 ### Example
 - Input: `["Jane", "Kim"]`
@@ -14,8 +16,6 @@
 
 ```python
 def solution(seoul):
-    x = seoul.index("Kim")  # Kim이 위치한 인덱스를 찾음
+    x = seoul.index("Kim")
     return f"김서방은 {x}에 있다"
 ```
-
-
