@@ -24,5 +24,3 @@ def solution(a, b):
     return answer
 ```
 
----
----

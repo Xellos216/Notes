@@ -38,5 +38,3 @@ def solution(num):
     return -1
 ```
 
----
----
