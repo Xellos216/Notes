@@ -56,6 +56,41 @@ gh repo create <레포명> --public --source=. --remote=origin --push
   git config --global init.defaultBranch main
   ```
 
+### 🔴 GitHub CLI로 레포 삭제하기
+
+> 본인 소유의 레포지토리를 CLI로 삭제할 때 주의사항 포함
+
+### ✅ 삭제 명령어
+
+```bash
+gh repo delete <OWNER>/<REPO> --yes
+````
+
+* 예: `gh repo delete Xellos216/IntroPage --yes`
+* `--yes`: 삭제 확인 프롬프트 생략
+
+### ⚠️ 주의사항 및 오류 해결
+
+| 오류                                 | 원인 및 해결 방법                                |
+| ---------------------------------- | ----------------------------------------- |
+| `HTTP 403: Must have admin rights` | 해당 레포의 **소유자(admin)** 권한이 있어야 함           |
+| `needs the "delete_repo" scope`    | GitHub CLI 토큰에 **delete\_repo** 권한이 없어 발생 |
+
+### 🔐 권한 추가 방법
+
+```bash
+gh auth refresh -h github.com -s delete_repo
+```
+
+* GitHub 인증 페이지 열림 → 로그인하여 권한 부여
+* 이후 다시 삭제 명령 실행 가능
+
+### 🔁 흐름 요약
+
+1. 삭제 대상이 **본인 소유**인지 확인 (`gh repo view`)
+2. `delete_repo` 권한 추가 (`gh auth refresh`)
+3. 삭제 명령 실행 (`gh repo delete ... --yes`)
+
 ---
 
 ## 🟡 3단계: 협업 흐름과 pull/push 구조
