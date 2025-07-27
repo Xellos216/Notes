@@ -301,7 +301,7 @@ public class UserInfoPrinter {
 ```
 
 <details>
-<summary>📌 정답 (어려웠다면 확인 후 다시 한 번 작성해보세요!)</summary>
+<summary>✅ 정답 보기</summary>
 
 ```java
 import java.util.Scanner;
@@ -322,6 +322,225 @@ public class UserInfoPrinter {
         System.out.println("\n출력 결과:");
         System.out.println("이름: " + name);
         System.out.println("나이: " + age);
+    }
+}
+```
+
+</details>
+
+## Q18. 산술 연산자 문제
+
+두 개의 정수 `a`, `b`가 주어졌을 때  
+두 수의 **합, 차, 곱, 나누기, 나머지** 연산 결과를 변수에 저장한 후 출력하는 프로그램을 작성하세요.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int a; // 값 할당 필요
+        int b; // 값 할당 필요
+
+        // 1. 더하기
+        // 2. 빼기
+        // ...
+    }
+}
+```
+
+### 💡 예상 출력:
+```
+덧셈 결과: 19
+뺄셈 결과: 11
+곱셈 결과: 60
+나눗셈 결과: 3
+나머지 결과: 3
+```
+
+<details>
+<summary>✅ 정답 보기</summary>
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int a = 15;
+        int b = 4;
+
+        int sum = a + b;
+        int difference = a - b;
+        int product = a * b;
+        int quotient = a / b;
+        int remainder = a % b;
+
+        System.out.println("덧셈 결과: " + sum);
+        System.out.println("뺄셈 결과: " + difference);
+        System.out.println("곱셈 결과: " + product);
+        System.out.println("나눗셈 결과: " + quotient);
+        System.out.println("나머지 결과: " + remainder);
+    }
+}
+```
+
+</details>
+
+---
+
+## Q19. 비교 연산자 문제
+
+두 개의 정수 `x`, `y`가 주어졌을 때 아래 조건을 비교하는 프로그램을 작성하세요:
+
+- `x > y`  
+- `x < y`  
+- `x == y`  
+- `x != y`
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // ...
+    }
+}
+```
+
+### 💡 예상 출력:
+```
+x가 y보다 큰가? false
+x가 y보다 작은가? true
+x와 y가 같은가? false
+x와 y가 다른가? true
+```
+
+<details>
+<summary>✅ 정답 보기</summary>
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 20;
+
+        boolean isGreater = x > y;
+        boolean isSmaller = x < y;
+        boolean isEqual = x == y;
+        boolean isNotEqual = x != y;
+
+        System.out.println("x가 y보다 큰가? " + isGreater);
+        System.out.println("x가 y보다 작은가? " + isSmaller);
+        System.out.println("x와 y가 같은가? " + isEqual);
+        System.out.println("x와 y가 다른가? " + isNotEqual);
+    }
+}
+```
+
+</details>
+
+## Q20. 두 문자열이 같은지 비교할 수 있는 프로그램 만들기
+
+입력된 두 개의 문자열 `str1`, `str2`를 비교한 결과를 `result` 변수에 저장하고 출력하세요.  
+- 문자열 비교는 `.equals()` 사용
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // TODO: 사용자로부터 두 문자열 입력받기
+        // TODO: 비교 후 결과를 result에 저장
+        // TODO: 결과 출력
+    }
+}
+```
+
+### 💡 예상 출력:
+```
+첫 번째 문자열을 입력하세요: Java
+두 번째 문자열을 입력하세요: Java
+두 문자열이 같은가요? true
+```
+
+<details>
+<summary>✅ 정답 보기</summary>
+
+```java
+import java.util.Scanner;
+
+public class StringComparison {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("첫 번째 문자열을 입력하세요: ");
+        String str1 = scanner.nextLine();
+
+        System.out.print("두 번째 문자열을 입력하세요: ");
+        String str2 = scanner.nextLine();
+
+        boolean result = str1.equals(str2);
+
+        System.out.println("두 문자열이 같은가요? " + result);
+    }
+}
+```
+
+</details>
+
+## Q21. 신호등 색상을 입력하면 안내 메시지를 출력하는 프로그램 만들기
+
+새로운 클래스 `TrafficLight.java`를 생성해서 작성하세요.
+
+### ✅ 처리해야 할 조건
+
+1. `"초록불"` → `"건너세요!"` 출력  
+2. `"노란불"` → `"주의하세요!"` 출력  
+3. `"빨간불"` → `"멈추세요!"` 출력  
+4. 그 외 입력 → `"잘못된 입력입니다."` 출력
+
+```java
+import java.util.Scanner;
+
+public class TrafficLight {
+    public static void main(String[] args) {
+        // ...
+    }
+}
+```
+
+### 💡 예상 출력 예시
+
+```
+신호등 색상을 입력하세요 (초록불, 노란불, 빨간불): 초록불
+건너세요!
+
+신호등 색상을 입력하세요 (초록불, 노란불, 빨간불): 노란불
+주의하세요!
+
+신호등 색상을 입력하세요 (초록불, 노란불, 빨간불): 빨간불
+멈추세요!
+
+신호등 색상을 입력하세요 (초록불, 노란불, 빨간불): 파란불
+잘못된 입력입니다.
+```
+
+---
+
+<details>
+<summary>✅ 정답 보기</summary>
+
+```java
+import java.util.Scanner;
+
+public class TrafficLight {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("신호등 색상을 입력하세요 (초록불, 노란불, 빨간불): ");
+        String light = scanner.nextLine(); // 사용자 입력 받기
+
+        // 조건문 처리
+        if (light.equals("초록불")) {
+            System.out.println("건너세요!");
+        } else if (light.equals("노란불")) {
+            System.out.println("주의하세요!");
+        } else if (light.equals("빨간불")) {
+            System.out.println("멈추세요!");
+        } else {
+            System.out.println("잘못된 입력입니다.");
+        }
     }
 }
 ```
