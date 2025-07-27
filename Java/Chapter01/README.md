@@ -546,3 +546,238 @@ public class TrafficLight {
 ```
 
 </details>
+
+## Q22. 입력한 숫자의 구구단 출력하기
+
+사용자로부터 **2~9 사이**의 숫자를 입력받아 해당 단의 구구단을 출력하세요.  
+사용자가 3을 입력하면 3단을 출력해야 합니다.  
+👉 `for` 또는 `while` 문을 자유롭게 활용하세요.
+
+```java
+import java.util.Scanner;
+
+public class Gugudan {
+    public static void main(String[] args) {
+        // ...
+    }
+}
+```
+
+### 💡 출력 예시:
+```
+출력할 구구단 단수를 입력하세요 (2~9): 3
+==== 3단 ====
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+...
+3 x 9 = 27
+```
+
+<details>
+<summary>✅ 정답 보기</summary>
+
+```java
+import java.util.Scanner;
+
+public class Gugudan {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("출력할 구구단 단수를 입력하세요 (2~9): ");
+        int dan = scanner.nextInt();
+
+        // 2~9 사이 숫자인지 확인
+        if (dan < 2 || dan > 9) {
+            System.out.println("2에서 9 사이의 숫자를 입력하세요!");
+        } else {
+            System.out.println("==== " + dan + "단 ====");
+            for (int i = 1; i <= 9; i++) {
+                System.out.println(dan + " x " + i + " = " + (dan * i));
+            }
+        }
+    }
+}
+```
+
+</details>
+
+---
+
+## Q23. 2단부터 9단까지 구구단 출력 (중첩 for문 활용)
+
+2단부터 9단까지 전체 구구단을 출력하는 프로그램을 작성하세요.
+
+```java
+public class GugudanAll {
+    public static void main(String[] args) {
+        // ...
+    }
+}
+```
+
+### 💡 출력 예시:
+```
+==== 2단 ====
+2 x 1 = 2
+2 x 2 = 4
+...
+2 x 9 = 18
+
+==== 3단 ====
+3 x 1 = 3
+...
+==== 9단 ====
+9 x 9 = 81
+```
+
+<details>
+<summary>✅ 정답 보기</summary>
+
+```java
+public class GugudanAll {
+    public static void main(String[] args) {
+
+        for (int dan = 2; dan <= 9; dan++) { // 2단부터 9단까지 반복
+            System.out.println("==== " + dan + "단 ====");
+
+            for (int i = 1; i <= 9; i++) { // 1~9까지 곱하기
+                System.out.println(dan + " x " + i + " = " + (dan * i));
+            }
+
+            System.out.println(); // 단 간격을 띄우기
+        }
+    }
+}
+```
+
+</details>
+
+## Q23. 1차원 배열에서 짝수만 출력하기
+
+아래의 정수 배열이 주어졌을 때 **짝수만 출력**하세요.
+
+배열 예시: `{3, 4, 7, 10, 15, 20}`
+
+```java
+public class EvenNumberFinder {
+    public static void main(String[] args) {
+        // ...
+    }
+}
+```
+
+### 💡 예상 출력:
+```
+짝수: 4 10 20
+```
+
+<details>
+<summary>✅ 정답 보기</summary>
+
+```java
+public class EvenNumberFinder {
+    public static void main(String[] args) {
+        int[] numbers = {3, 4, 7, 10, 15, 20};
+
+        System.out.print("짝수: ");
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 == 0) {
+                System.out.print(numbers[i] + " ");
+            }
+        }
+    }
+}
+```
+
+</details>
+
+---
+
+## Q25. 1차원 배열의 누적합 구하기
+
+배열 예시: `{2, 5, 8}`
+
+```java
+public class PrefixSum {
+    public static void main(String[] args) {
+        // ...
+    }
+}
+```
+
+### 💡 예상 출력:
+```
+누적합: 15
+```
+
+<details>
+<summary>✅ 정답 보기</summary>
+
+```java
+public class PrefixSum {
+    public static void main(String[] args) {
+        int[] numbers = {2, 5, 8};
+        int sum = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+
+        System.out.println("누적합: " + sum);
+    }
+}
+```
+
+</details>
+
+---
+
+## Q26. 2차원 배열에서 검은돌(`true`)의 좌표 `(x, y)` 찾기
+
+배열 예시:
+
+```java
+boolean[][] board = {
+    {true, false},
+    {false, true}
+};
+```
+
+```java
+public class BlackStoneFinder {
+    public static void main(String[] args) {
+        // ...
+    }
+}
+```
+
+### 💡 예상 출력:
+```
+검은돌(●) 위치: (0,0)
+검은돌(●) 위치: (1,1)
+```
+
+<details>
+<summary>✅ 정답 보기</summary>
+
+```java
+public class BlackStoneFinder {
+    public static void main(String[] args) {
+        boolean[][] board = {
+            {true, false},
+            {false, true}
+        };
+
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                if (board[i][j]) {
+                    System.out.println("검은돌(●) 위치: (" + i + "," + j + ")");
+                }
+            }
+        }
+    }
+}
+```
+
+</details>
