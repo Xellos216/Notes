@@ -48,7 +48,7 @@ src/
 
 ---
 
-## ⚙️ 주요 리팩토링 포인트 (Lambda & Stream)
+## ⚙️ 주요 리팩토링 포인트
 
 - **카테고리별 메뉴 필터링**: `filter()` + `collect()`로 구현
 - **장바구니 항목 중복 검사 및 수량 누적**: `stream().filter().findFirst().ifPresentOrElse()` 적용
@@ -75,7 +75,6 @@ src/
 - ✅ 기능 기획 및 역할 기반 클래스 설계
 - ✅ Java 콘솔 기반 구현 (Lambda & Stream 적용)
 - ✅ 사용자 흐름 및 예외 처리 개선
-- 🔜 Spring Boot 기반 MVC 구조 확장 예정
 
 ---
 
