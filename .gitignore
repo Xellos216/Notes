@@ -1,21 +1,56 @@
+# ───────────────────────────────
+# 🐍 Python 관련
+# ───────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-~/.mitmproxy/
-.vscode/
+.ipynb_checkpoints/
 .env
+
+# ───────────────────────────────
+# 🌐 Node.js / 웹 관련
+# ───────────────────────────────
+node_modules/
+
+# ───────────────────────────────
+# ☕ Java / Spring Boot 관련
+# ───────────────────────────────
+.gradle/
+build/
+*.jar
+*.war
+
+# gradle-wrapper 예외 (실행에 필요)
+!gradle/wrapper/gradle-wrapper.jar
+
+# ───────────────────────────────
+# 🧪 테스트 / 로그 파일
+# ───────────────────────────────
+test-output/
 *.log
 *.bak
 *.swp
-node_modules/
-.ipynb_checkpoints/
-Thumbs.db
+
+# ───────────────────────────────
+# 💻 IDE / 편집기 설정
+# ───────────────────────────────
+.vscode/
+.idea/
+*.iml
+out/
+
+# ───────────────────────────────
+# 🗂️ OS/기타 자동 생성 파일
+# ───────────────────────────────
+.DS_Store        # macOS
+Thumbs.db        # Windows
 ehthumbs.db
 Icon?
 *.orig
-**/.idea/
-out/
-*.iml
-*.class
-.vscode
+
+# ───────────────────────────────
+# 🌐 기타 툴
+# ───────────────────────────────
+~/.mitmproxy/
+
