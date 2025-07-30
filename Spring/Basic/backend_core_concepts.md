@@ -142,5 +142,3 @@ POST /schedule
 - 다양한 HTTP 메서드(GET, POST, PUT, DELETE)를 테스트할 수 있는 도구
 - JSON 형태의 요청/응답 테스트 가능
 - 프론트 없이 백엔드 API만으로도 기능 검증 가능
-
-
