@@ -56,7 +56,7 @@
 
 ### 🔧 httpie
 ![](images/memos_post_get_put.png)
-![](images/memo_del.png)
+![](images/memos_del.png)
 
 ---
 
