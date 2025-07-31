@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 public class MemoService {
-
     private final MemoRepository memoRepository;
 
     @Transactional
