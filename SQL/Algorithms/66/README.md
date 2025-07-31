@@ -29,6 +29,32 @@ ORDER BY
 
 ---
 
+## 💾 SQL Query, Rank() 사용
+```sql
+WITH RankedBoards AS (
+  SELECT
+    B.BOARD_ID,
+    F.FILE_ID,
+    F.FILE_NAME,
+    F.FILE_EXT,
+    RANK() OVER (ORDER BY B.VIEWS DESC) AS RANKING
+  FROM
+    USED_GOODS_BOARD B
+  JOIN
+    USED_GOODS_FILE F ON B.BOARD_ID = F.BOARD_ID
+)
+SELECT
+  CONCAT('/home/grep/src/', BOARD_ID, '/', FILE_ID, FILE_NAME, FILE_EXT) AS FILE_PATH
+FROM
+  RankedBoards
+WHERE
+  RANKING = 1
+ORDER BY
+  FILE_ID DESC;
+```
+
+---
+
 ## SQL Keywords 설명
 
 ### 🔹 CONCAT
@@ -56,28 +82,4 @@ ORDER BY
 - STEP 4: `FILE_ID DESC`로 정렬
 
 
----
 
-## 💾 SQL Query, Rank() 사용
-```sql
-WITH RankedBoards AS (
-  SELECT
-    B.BOARD_ID,
-    F.FILE_ID,
-    F.FILE_NAME,
-    F.FILE_EXT,
-    RANK() OVER (ORDER BY B.VIEWS DESC) AS RANKING
-  FROM
-    USED_GOODS_BOARD B
-  JOIN
-    USED_GOODS_FILE F ON B.BOARD_ID = F.BOARD_ID
-)
-SELECT
-  CONCAT('/home/grep/src/', BOARD_ID, '/', FILE_ID, FILE_NAME, FILE_EXT) AS FILE_PATH
-FROM
-  RankedBoards
-WHERE
-  RANKING = 1
-ORDER BY
-  FILE_ID DESC;
-```

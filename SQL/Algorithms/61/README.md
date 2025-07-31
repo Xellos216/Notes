@@ -43,5 +43,3 @@ ORDER BY SCORE DESC, I.FAVORITES DESC;
 - `GROUP BY`로 식당별 집계
 - `ROUND(AVG(...))`로 평균 리뷰 점수 계산
 - `ORDER BY`로 점수 및 즐겨찾기 기준 정렬
-
----
