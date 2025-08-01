@@ -1,3 +1,4 @@
+```java
 public class NumberUtils {
 
 	public static <T extends Number> T castToType(double result, Class<T> type) {
@@ -9,3 +10,4 @@ public class NumberUtils {
 	    };
 	}
     }
+```

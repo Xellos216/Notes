@@ -1,3 +1,4 @@
+```java
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream,Collector;
@@ -53,3 +54,4 @@ public class ArithmeticCalculator<T extends Number> {
 	    resultList.add(result);
 	}
     }
+```

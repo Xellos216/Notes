@@ -1,3 +1,4 @@
+```java
 import java.util.Scanner;
 
 public class App {
@@ -47,3 +48,4 @@ public class App {
 		}
 	    }
 	}
+```
