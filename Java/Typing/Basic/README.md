@@ -4,8 +4,8 @@
 
 <details>
 <summary> ❓ 문제 보기</summary>
-```
-javapublic class ArrayProcessor {
+```java
+public class ArrayProcessor {
 
     public int sumEvenNumbers(int[] numbers) {
         // TODO: 이 메서드를 완성하세요.
@@ -117,7 +117,6 @@ public class Main {
     }
 }
 ```
-
 </details>
 
 ## 4번. 참조 변수와 객체 간의 상호작용
