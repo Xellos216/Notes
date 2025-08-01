@@ -3,8 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream,Collector;
 
-import static com.example.calculator3.NumberUtils.castToType;
-
 public class ArithmeticCalculator<T extends Number> {
 
 	private final List<T> resultList = new ArrayList<>();
