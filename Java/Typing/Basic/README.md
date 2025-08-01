@@ -1,8 +1,7 @@
-### 1번. 배열 처리 메서드 만들기
+## 1번. 배열 처리 메서드 만들기
 
 정수 배열을 받아 짝수만 골라내어 그 합계를 반환하는 `sumEvenNumbers` 메서드를 완성하세요.
 
-<details>
 <summary> ❓ 문제 보기</summary>
 ```java
 public class ArrayProcessor {
@@ -26,13 +25,11 @@ public class ArrayProcessor {
     }
 }
 ```
-</details>
 
-### 2번. 클래스와 생성자 설계
+## 2번. 클래스와 생성자 설계
 
 책을 표현하는 `Book` 클래스에서 생성자와 정보 출력 메서드를 완성하세요.
 
-<details>
 <summary> ❓ 문제 보기</summary>
 ```java
 public class Book {
@@ -58,13 +55,11 @@ public class Book {
     }
 }
 ```
-</details>
 
-### 3번. 상속과 메서드 오버라이딩
+## 3번. 상속과 메서드 오버라이딩
 
 `Shape` 추상 클래스를 상속받는 `Circle`과 `Rectangle` 클래스에서 `getArea()` 메서드를 재정의하여 각 도형의 넓이를 구하세요.
 
-<details>
 <summary> ❓ 문제 보기</summary>
 ```java
 // 수정할 필요 없는 추상 클래스
@@ -115,11 +110,9 @@ public class Main {
     }
 }
 ```
-</details>
 
-### 4번. 참조 변수와 객체 간의 상호작용
+## 4번. 참조 변수와 객체 간의 상호작용
 
-<details>
 <summary> ❓ 문제 보기</summary>
 `Team` 클래스에 `Player` 객체를 추가하고, 소속된 선수 명단을 출력하는 `printPlayerList`와 추가하는 `addPlayer`메서드를 완성하세요.
 
@@ -168,11 +161,9 @@ public class BaseballManager {
     }
 }
 ```
-</details>
 
-### 5번. 간단한 은행 입출금 시스템
+## 5번. 간단한 은행 입출금 시스템
 
-<details>
 <summary> ❓ 문제 보기</summary>
 `Account` 클래스의 입출금 메서드와 `Bank` 클래스의 계좌 찾기 메서드를 완성하여 간단한 은행 시스템 로직을 구현하세요.
 
@@ -224,4 +215,3 @@ public class BankingSystem {
     }
 }
 ```
-</details>
