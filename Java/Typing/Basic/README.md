@@ -26,11 +26,13 @@ public class ArrayProcessor {
     }
 }
 ```
+</details>
 
 ## 2번. 클래스와 생성자 설계
 
 책을 표현하는 `Book` 클래스에서 생성자와 정보 출력 메서드를 완성하세요.
 
+</details>
 <summary> ❓ 문제 보기</summary>
 ```java
 public class Book {
@@ -56,11 +58,13 @@ public class Book {
     }
 }
 ```
+</details>
 
 ## 3번. 상속과 메서드 오버라이딩
 
 `Shape` 추상 클래스를 상속받는 `Circle`과 `Rectangle` 클래스에서 `getArea()` 메서드를 재정의하여 각 도형의 넓이를 구하세요.
 
+</details>
 <summary> ❓ 문제 보기</summary>
 ```java
 // 수정할 필요 없는 추상 클래스
@@ -111,6 +115,7 @@ public class Main {
     }
 }
 ```
+</details>
 
 ## 4번. 참조 변수와 객체 간의 상호작용
 
@@ -216,4 +221,4 @@ public class BankingSystem {
     }
 }
 ```
-</details>
+
