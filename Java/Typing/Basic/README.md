@@ -2,6 +2,7 @@
 
 정수 배열을 받아 짝수만 골라내어 그 합계를 반환하는 `sumEvenNumbers` 메서드를 완성하세요.
 
+<details>
 <summary> ❓ 문제 보기</summary>
 ```java
 public class ArrayProcessor {
@@ -25,6 +26,7 @@ public class ArrayProcessor {
     }
 }
 ```
+</details>
 
 ## 2번. 클래스와 생성자 설계
 
