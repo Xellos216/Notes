@@ -26,7 +26,6 @@ public class ArrayProcessor {
     }
 }
 ```
-</details>
 
 ## 2번. 클래스와 생성자 설계
 
@@ -217,3 +216,4 @@ public class BankingSystem {
     }
 }
 ```
+</details>
