@@ -2,9 +2,7 @@
 
 정수 배열을 받아 짝수만 골라내어 그 합계를 반환하는 `sumEvenNumbers` 메서드를 완성하세요.
 
-<details>
-<summary> ❓ 문제 보기</summary>
-<pre><code class="language-java">
+```java
 public class ArrayProcessor {
 
     public int sumEvenNumbers(int[] numbers) {
@@ -25,16 +23,13 @@ public class ArrayProcessor {
         System.out.println("짝수들의 합: " + result); // 예상 결과: 40
     }
 }
-</code></pre>
-</details>
+```
 
 ## 2번. 클래스와 생성자 설계
 
 책을 표현하는 `Book` 클래스에서 생성자와 정보 출력 메서드를 완성하세요.
 
-<details>
-<summary> ❓ 문제 보기</summary>
-<pre><code class="language-java">
+```java
 public class Book {
     // 필드 (속성)
     String title;
@@ -57,16 +52,13 @@ public class Book {
         // 예: Book myBook = new Book("자바의 정석", "남궁성", 30000);
     }
 }
-</code></pre>
-</details>
+```
 
 ## 3번. 상속과 메서드 오버라이딩
 
 `Shape` 추상 클래스를 상속받는 `Circle`과 `Rectangle` 클래스에서 `getArea()` 메서드를 재정의하여 각 도형의 넓이를 구하세요.
 
-<details>
-<summary> ❓ 문제 보기</summary>
-<pre><code class="language-java">
+```java
 // 수정할 필요 없는 추상 클래스
 abstract class Shape {
     abstract double getArea(); // 넓이를 구하는 추상 메서드
@@ -114,16 +106,13 @@ public class Main {
         System.out.println("사각형의 넓이: " + rectangle.getArea()); // 예상 결과: 40.0
     }
 }
-</code></pre>
-</details>
+```
 
 ## 4번. 참조 변수와 객체 간의 상호작용
 
 `Team` 클래스에 `Player` 객체를 추가하고, 소속된 선수 명단을 출력하는 `printPlayerList`와 추가하는 `addPlayer`메서드를 완성하세요.
 
-<details>
-<summary> ❓ 문제 보기</summary>
-<pre><code class="language-java">
+```java
 import java.util.ArrayList;
 
 // 수정할 필요 없는 Player 클래스
@@ -167,16 +156,13 @@ public class BaseballManager {
         myTeam.printPlayerList(); // 예상 결과: 오타니, 김혜성 출력
     }
 }
-</code></pre>
-</details>
+```
 
 ## 5번. 간단한 은행 입출금 시스템
 
 `Account` 클래스의 입출금 메서드와 `Bank` 클래스의 계좌 찾기 메서드를 완성하여 간단한 은행 시스템 로직을 구현하세요.
 
-<details>
-<summary> ❓ 문제 보기</summary>
-<pre><code class="language-java">
+```java
 import java.util.ArrayList;
 
 class Account {
@@ -223,5 +209,4 @@ public class BankingSystem {
         }
     }
 }
-</code></pre>
-</details>
+```
