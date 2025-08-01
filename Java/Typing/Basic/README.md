@@ -4,7 +4,8 @@
 
 <details>
 <summary> ❓ 문제 보기</summary>
-public class ArrayProcessor {
+```
+javapublic class ArrayProcessor {
 
     public int sumEvenNumbers(int[] numbers) {
         // TODO: 이 메서드를 완성하세요.
@@ -24,6 +25,8 @@ public class ArrayProcessor {
         System.out.println("짝수들의 합: " + result); // 예상 결과: 40
     }
 }
+```
+
 </details>
 
 ## 2번. 클래스와 생성자 설계
@@ -32,6 +35,7 @@ public class ArrayProcessor {
 
 <details>
 <summary> ❓ 문제 보기</summary>
+```java
 public class Book {
     // 필드 (속성)
     String title;
@@ -54,6 +58,8 @@ public class Book {
         // 예: Book myBook = new Book("자바의 정석", "남궁성", 30000);
     }
 }
+```
+
 </details>
 
 ## 3번. 상속과 메서드 오버라이딩
@@ -62,6 +68,7 @@ public class Book {
 
 <details>
 <summary> ❓ 문제 보기</summary>
+```java
 // 수정할 필요 없는 추상 클래스
 abstract class Shape {
     abstract double getArea(); // 넓이를 구하는 추상 메서드
@@ -109,6 +116,8 @@ public class Main {
         System.out.println("사각형의 넓이: " + rectangle.getArea()); // 예상 결과: 40.0
     }
 }
+```
+
 </details>
 
 ## 4번. 참조 변수와 객체 간의 상호작용
@@ -117,6 +126,7 @@ public class Main {
 
 <details>
 <summary> ❓ 문제 보기</summary>
+```java
 import java.util.ArrayList;
 
 // 수정할 필요 없는 Player 클래스
@@ -160,6 +170,8 @@ public class BaseballManager {
         myTeam.printPlayerList(); // 예상 결과: 오타니, 김혜성 출력
     }
 }
+```
+
 </details>
 
 ## 5번. 간단한 은행 입출금 시스템
@@ -168,6 +180,7 @@ public class BaseballManager {
 
 <details>
 <summary> ❓ 문제 보기</summary>
+```java
 import java.util.ArrayList;
 
 class Account {
@@ -214,4 +227,6 @@ public class BankingSystem {
         }
     }
 }
+```
+
 </details>
