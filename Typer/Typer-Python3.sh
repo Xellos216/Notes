@@ -4,7 +4,7 @@
 
 # 경로 정의
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROBLEMS_DIR="$SCRIPT_DIR/Problems"
+PROBLEMS_DIR="$SCRIPT_DIR/Python3"
 TMP_FILE="/tmp/typer_input_$$.txt"
 
 
@@ -57,7 +57,7 @@ fi
 
 PROBLEM_NUM="$1"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROBLEMS_DIR="$SCRIPT_DIR/Problems"
+PROBLEMS_DIR="$SCRIPT_DIR/Python3"
 TMP_FILE="/tmp/typer_input_$$.txt"
 
 
